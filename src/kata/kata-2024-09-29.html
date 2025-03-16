@@ -1,0 +1,40 @@
+<script>
+
+  // Write function bmi that calculates body mass index (bmi = weight / height2).
+  // if bmi <= 18.5 return "Underweight"
+  // if bmi <= 25.0 return "Normal"
+  // if bmi <= 30.0 return "Overweight"
+  // if bmi > 30 return "Obese"
+
+  // function bmi(weight, height) {
+  //   let bmiIndex = weight / (height * height);
+  //   if (bmiIndex <= 18.5) {
+  //     return "Underweight"
+  //   }
+  //   if (bmiIndex <= 25.0) {
+  //     return "Normal"
+  //   }
+  //   if (bmiIndex <= 30.0) {
+  //     return "Overweight"
+  //   }
+  //   if (bmiIndex > 30) {
+  //     return "Obese"
+  //   }
+  // }
+  //
+  // console.log('bmi', bmi(55, 1.65))
+
+
+  // Write a function that takes an array of words and smashes them together into
+  // a sentence and returns the sentence. You can ignore any need to sanitize words
+  // or add punctuation, but you should add spaces between each word. Be careful,
+  //  there shouldn't be a space at the beginning or the end of the sentence!
+
+  function smash (words) {
+    let res = words.join(' ')
+    return res
+  };
+
+  console.log('smash', smash(['hello', 'world']))
+
+</script>

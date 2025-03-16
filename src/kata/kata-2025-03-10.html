@@ -1,0 +1,29 @@
+<script>
+
+  function divisors(integer) {
+    if (!Number.isInteger(integer)) {
+      return "Введите целое число";
+    }
+    let result = [];
+    for (let i = 2; i <= integer; i++) {
+      if (integer % i === 0) {
+        result.push(i);
+      }
+    }
+
+    if (result.length === 1) {
+      if (result == integer) {
+        return `${integer} is prime`
+      }
+    }
+    else if (result.at(-1) == integer) {
+      return result.slice(0, -1);
+    }
+  }
+
+  console.log(divisors(15))
+  console.log(divisors(13))
+  console.log(divisors(12))
+
+</script>
+

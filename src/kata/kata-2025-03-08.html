@@ -1,0 +1,17 @@
+<script>
+
+  function highAndLow(numbers){
+    const arr = numbers.split(' ');
+    const newArr = arr.map((el) => {
+      return +el
+    })
+    const maxValue = Math.max(...newArr).toString()
+    const minValue = Math.min(...newArr).toString()
+    const elements = [maxValue, minValue]
+    return elements.join(" ")
+  }
+
+  console.log(highAndLow("1 2 -3 4 5"))
+
+</script>
+
