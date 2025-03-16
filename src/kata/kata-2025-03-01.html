@@ -1,20 +1,10 @@
 <script>
 
-  function getCount(str) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    let total = 0;
-    const string = str.toLowerCase().split("");
-
-    for (let i = 0; i < string.length; i++) {
-      const charts = string[i];
-      if (vowels.includes(charts)) {
-        total += 1;
-      }
-    }
-    return total;
+  function disemvowel(str) {
+    return str.replace(/[aeiou]/gi, '')
   }
 
-  console.log(getCount('abrakadabra'))
+  console.log(disemvowel('This website is for losers LOL'));
 
 </script>
 

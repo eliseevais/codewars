@@ -1,17 +1,53 @@
 <script>
 
-  function highAndLow(numbers){
-    const arr = numbers.split(' ');
-    const newArr = arr.map((el) => {
-      return +el
-    })
-    const maxValue = Math.max(...newArr).toString()
-    const minValue = Math.min(...newArr).toString()
-    const elements = [maxValue, minValue]
-    return elements.join(" ")
+  // function maskify(cc) {
+  //   if (cc.length > 4) {
+  //     return cc.replace(/./gm, '#').slice(4) + cc.slice(-4)
+  //   } else if (cc.length < 4 || cc.length > 1) {
+  //     return cc
+  //   } else if (cc.length === 1) {
+  //     return cc
+  //   }
+  //   return ""
+  // }
+  //
+  // console.log(maskify("444444"))
+
+  function getSum(a, b) {
+    let arr = [a, b]
+
+    if (a === b) {
+      return a
+    }
+
+    if (a < b) {
+      for (let i = a; i < b; i++) {
+        if (i !== a) {
+          arr.splice(-1, 0, i)
+        }
+      }
+      let sum = 0;
+      arr.forEach(function (num) {
+        sum += num;
+      });
+      return sum;
+    }
+
+    if (a > b) {
+      for (let i = a; i > b; i--) {
+        if (i !== a) {
+          arr.splice(-1, 0, i)
+        }
+      }
+      let sum = 0;
+      arr.forEach(function (num) {
+        sum += num;
+      });
+      return sum;
+    }
   }
 
-  console.log(highAndLow("1 2 -3 4 5"))
+  console.log(getSum(5, -1))
 
 </script>
 

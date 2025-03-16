@@ -1,89 +1,116 @@
-// export function getCompressedString(text) {
+// function solution(input) {
+//   const [rulesSection, sequencesSection] = input.split('\n\n');
 //
-//   const words = text.toLowerCase().match(/[a-zA-Zа-яА-ЯёЁ]+/g) || [];
-//
-//   let wordFrequency = {};
-//   const wordFirstAppearance = {};
-//   let index = 0;
-//
-//   if (words) {
-//     words.forEach((word, i) => {
-//       wordFrequency[word] = (wordFrequency[word] || 0) + 1;
-//       if (!(word in wordFirstAppearance)) {
-//         wordFirstAppearance[word] = index++;
-//       }
-//     });
-//   }
-//
-//   const sortedWords = Object.keys(wordFrequency).sort((a, b) => {
-//     if (wordFrequency[b] !== wordFrequency[a]) {
-//       return wordFrequency[b] - wordFrequency[a];
-//     }
-//     return wordFirstAppearance[a] - wordFirstAppearance[b];
+//   const rules = rulesSection.split('\n').map(rule => {
+//     const [x, y] = rule.split('|').map(Number);
+//     return [x, y];
 //   });
 //
-//   const wordToIndex = {};
-//   sortedWords.forEach((word, idx) => {
-//     wordToIndex[word] = idx + 0;
-//   });
 //
-//   let result = '';
-//   let wordBuffer = '';
-//   let i = 0;
+//   const sequences = sequencesSection.split('\n').map(sequence =>
+//     sequence.split(/[ ,]+/).map(Number)
+//   );
 //
-//   while (i < text.length) {
-//     if (/[a-zA-Zа-яА-ЯёЁ]+/.test(text[i])) {
-//       wordBuffer += text[i].toLowerCase();
-//     } else {
-//       if (wordBuffer) {
-//         result += wordToIndex[wordBuffer];
-//         wordBuffer = '';
+//
+//   function isValidSequence(sequence) {
+//     for (let [x, y] of rules) {
+//       const xIndex = sequence.indexOf(x);
+//       const yIndex = sequence.indexOf(y);
+//
+//       if (xIndex !== -1 && yIndex !== -1 && xIndex > yIndex) {
+//         return false;
 //       }
-//       result += text[i];
 //     }
-//     i++;
+//     return true;
 //   }
 //
-//   if (wordBuffer) {
-//     result += wordToIndex[wordBuffer];
+//
+//   let validCount = 0;
+//   for (let sequence of sequences) {
+//     if (isValidSequence(sequence)) {
+//       validCount++;
+//     }
 //   }
 //
-//   return result;
+//   return validCount;
 // }
+//
+// module.exports = solution;
 
+// function solution(input) {
+//   const [rulesSection, sequencesSection] = input.split('\n\n');
+//
+//   const rules = rulesSection.split('\n').map(rule => {
+//     const [x, y] = rule.split(' ').map(Number);
+//     return [x, y];
+//   });
+//
+//   const sequences = sequencesSection.split('\n').map(sequence =>
+//     sequence.split(/[ ,]+/).map(Number)
+//   );
+//
+//   function isValidSequence(sequence) {
+//     for (let [x, y] of rules) {
+//       const xIndex = sequence.indexOf(x);
+//       const yIndex = sequence.indexOf(y);
+//
+//       if (xIndex !== -1 && yIndex !== -1 && xIndex > yIndex) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
+//
+//   let validCount = 0;
+//   for (let sequence of sequences) {
+//     if (isValidSequence(sequence)) {
+//       validCount++;
+//     }
+//   }
+//
+//   return validCount;
+// }
+//
+// module.exports = solution;
 
-export function getCompressedString(text) {
+function solution(input) {
+  const [rulesSection, sequencesSection] = input.split('\n\n');
 
-  const wordPattern = /\b[a-zа-яё]+\b/gi;
-  const words = text.match(wordPattern) || [];
-
-  const normalizedWords = words.map(word => word.toLowerCase());
-
-  const wordFrequency = {};
-  normalizedWords.forEach(word => {
-    wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+  const rules = rulesSection.split('\n').map(rule => {
+    const [x, y] = rule.split('|').map(Number);
+    return [x, y];
   });
 
-  const sortedWords = Object.keys(wordFrequency)
-    .sort((a, b) => {
-      if (wordFrequency[b] === wordFrequency[a]) {
-        return normalizedWords.indexOf(a) - normalizedWords.indexOf(b);
+
+  const sequences = sequencesSection.split('\n').map(sequence =>
+    sequence.split(/[ ,]+/).map(Number)
+  );
+
+
+  function isValidSequence(sequence) {
+    for (let [x, y] of rules) {
+      const xIndex = sequence.indexOf(x);
+      const yIndex = sequence.indexOf(y);
+
+      if (xIndex !== -1 && yIndex !== -1 && xIndex > yIndex) {
+        return false;
       }
-      return wordFrequency[b] - wordFrequency[a];
-    });
-
-  // Маппинг слов на их индексы
-  const wordToIndex = new Map();
-  sortedWords.forEach((word, index) => {
-    wordToIndex.set(word, index + 0);
-  });
-
-  const result = text.split(/(\W+)/).map(part => {
-    if (/\b[a-zа-яё]+\b/i.test(part)) {
-      return wordToIndex.get(part.toLowerCase()) || part;
     }
-    return part;
-  }).join('');
+    return true;
+  }
 
-  return result;
+
+  let validCount = 0;
+  for (let sequence of sequences) {
+    if (isValidSequence(sequence)) {
+      validCount++;
+    }
+  }
+
+  return validCount;
 }
+
+module.exports = solution;
+
+
+

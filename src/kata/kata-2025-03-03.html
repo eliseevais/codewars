@@ -1,16 +1,17 @@
 <script>
 
-  function squareDigits(num) {
-    let arr = ("" + num).split("").map(Number)
-    let newArr = arr.map((el) => {
-      return el ** 2
+  function highAndLow(numbers){
+    const arr = numbers.split(' ');
+    const newArr = arr.map((el) => {
+      return +el
     })
-    let finalArr = newArr.join('')
-    return +finalArr
+    const maxValue = Math.max(...newArr).toString()
+    const minValue = Math.min(...newArr).toString()
+    const elements = [maxValue, minValue]
+    return elements.join(" ")
   }
 
-
-  console.log(squareDigits(0))
+  console.log(highAndLow("1 2 -3 4 5"))
 
 </script>
 

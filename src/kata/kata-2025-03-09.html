@@ -1,53 +1,29 @@
 <script>
 
-  // function maskify(cc) {
-  //   if (cc.length > 4) {
-  //     return cc.replace(/./gm, '#').slice(4) + cc.slice(-4)
-  //   } else if (cc.length < 4 || cc.length > 1) {
-  //     return cc
-  //   } else if (cc.length === 1) {
-  //     return cc
-  //   }
-  //   return ""
-  // }
-  //
-  // console.log(maskify("444444"))
-
-  function getSum(a, b) {
-    let arr = [a, b]
-
-    if (a === b) {
-      return a
+  function divisors(integer) {
+    if (!Number.isInteger(integer)) {
+      return "Введите целое число";
+    }
+    let result = [];
+    for (let i = 2; i <= integer; i++) {
+      if (integer % i === 0) {
+        result.push(i);
+      }
     }
 
-    if (a < b) {
-      for (let i = a; i < b; i++) {
-        if (i !== a) {
-          arr.splice(-1, 0, i)
-        }
+    if (result.length === 1) {
+      if (result == integer) {
+        return `${integer} is prime`
       }
-      let sum = 0;
-      arr.forEach(function (num) {
-        sum += num;
-      });
-      return sum;
     }
-
-    if (a > b) {
-      for (let i = a; i > b; i--) {
-        if (i !== a) {
-          arr.splice(-1, 0, i)
-        }
-      }
-      let sum = 0;
-      arr.forEach(function (num) {
-        sum += num;
-      });
-      return sum;
+    else if (result.at(-1) == integer) {
+      return result.slice(0, -1);
     }
   }
 
-  console.log(getSum(5, -1))
+  console.log(divisors(15))
+  console.log(divisors(13))
+  console.log(divisors(12))
 
 </script>
 

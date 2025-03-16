@@ -1,0 +1,29 @@
+<script>
+  // function booleanToString(b){
+  //   if (b === true) {
+  //     return 'true'
+  //   } else return 'false'
+  // }
+  //
+  // console.log(booleanToString(true))
+
+  function abbrevName(name){
+    let initials = name.split(' ');
+
+    let initial01 = initials[0];
+    let initial02 = initials[1];
+
+    let shortInitial01 = initial01.slice(0, 1)  + '.';
+    let shortInitial02 = initial02.slice(0, 1);
+
+    let upperCaseShortInitial01 = shortInitial01.toUpperCase();
+    let upperCaseShortInitial02 = shortInitial02.toUpperCase();
+
+    let result = upperCaseShortInitial01.concat(upperCaseShortInitial02).toString();
+    return result;
+  }
+
+  console.log(abbrevName('s mharris'))
+
+
+</script>

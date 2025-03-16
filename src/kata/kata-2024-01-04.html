@@ -1,0 +1,27 @@
+<script>
+  // function check(a, x) {
+  //   if (a.includes(x)) {
+  //     console.log('true');
+  //     return true
+  //   } else {
+  //     console.log('false');
+  //     return false
+  //   }
+  // }
+  //
+  // check([444, 'ddd'], 4);
+
+  // ---------------------------------------------------------------------------
+  function reverseWords(str){
+    let splitStr = str.split(' ');
+    console.log(splitStr, 'splitStr')
+    let reverseStr = splitStr.reverse();
+    console.log(reverseStr, 'reverseStr');
+    str = reverseStr.join(' ');
+    console.log(str, 'str');
+    return str; // reverse those words
+  }
+
+  reverseWords('world!, hello')
+
+</script>

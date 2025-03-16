@@ -1,0 +1,21 @@
+<script>
+  // function digitize(n) {
+  //   let array = [...'' + n].map(Number);
+  //   array.reverse()
+  //   return array
+  // }
+  //
+  // digitize(12345);
+
+  function squareSum(numbers) {
+    let out = 0
+    for (let i = 0; i < numbers.length; i++) {
+      let result = numbers[i] * numbers[i];
+      out = out + result;
+    }
+    return out;
+  }
+
+  console.log(squareSum([1, 2, 3]))
+
+</script>

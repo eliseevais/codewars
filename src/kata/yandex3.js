@@ -1,38 +1,129 @@
-function solution(input) {
-  const [rulesSection, sequencesSection] = input.split('\n\n');
+// // function getRecord(url, recordId) {
+// //   try {
+// //     const response = fetch(url);
+// //
+// //     if (!response.ok) {
+// //       throw new Error(`Ошибка при получении данных с сервера: ${response.status}`);
+// //     }
+// //
+// //     const data = response.json();
+// //
+// //     if (!data.records || !Array.isArray(data.records)) {
+// //       throw new Error(`Неожиданный формат данных: ${url}`);
+// //     }
+// //
+// //     const record = data.records.find(record => record.id === recordId);
+// //
+// //     if (!record) {
+// //       throw new Error(`Запись не найдена, id: ${recordId}`);
+// //     }
+// //
+// //     return {
+// //       getTitle: () => record.title,
+// //       getSummary: () => record.summary,
+// //       getDetails: () => record.details
+// //     };
+// //
+// //   } catch (error) {
+// //     throw error;
+// //   }
+// // }
+// //
+// // module.exports = getRecord;
+//
+// async function getRecord(url, recordId) {
+//   try {
+//     const response = await fetch(url);
+//
+//     if (!response.ok) {
+//       throw new Error(`Ошибка при получении данных с сервера: ${response.status}`);
+//     }
+//
+//     const data = await response.json();
+//
+//     if (!data.records || !Array.isArray(data.records)) {
+//       throw new Error(`Неожиданный формат данных: ${url}`);
+//     }
+//
+//     const record = data.records.find(record => record.id === recordId);
+//
+//     if (!record) {
+//       throw new Error(`Запись не найдена, id: ${recordId}`);
+//     }
+//
+//     return {
+//       getTitle: () => record.title,
+//       getSummary: () => record.summary,
+//       getDetails: () => record.details
+//     };
+//
+//   } catch (error) {
+//     throw error;
+//   }
+// }
+//
+// module.exports = getRecord;
+//
 
-  const rules = rulesSection.split('\n').map(rule => {
-    const [x, y] = rule.split('|').map(Number);
-    return [x, y];
-  });
 
+// async function getRecord(url, recordId) {
+//   try {
+//     const response = await fetch(url);
+//
+//     if (!response.ok) {
+//       throw new Error(`Ошибка при загрузке данных: ${response.status}`);
+//     }
+//
+//     let data;
+//     try {
+//       data = await response.json();
+//     } catch (err) {
+//       throw new Error(`Неожиданный формат данных: ${url}`);
+//     }
+//
+//     const record = data.records.find(record => record.id === recordId);
+//
+//     if (!record) {
+//       throw new Error(`Запись не найдена, id: ${recordId}`);
+//     }
+//
+//     return {
+//       getTitle: () => record.title,
+//       getSummary: () => record.summary,
+//       getDetails: () => record.details
+//     };
+//
+//   } catch (error) {
+//     throw error;
+//   }
+// }
+//
+// module.exports = getRecord;
 
-  const sequences = sequencesSection.split('\n').map(sequence =>
-    sequence.split(/[ ,]+/).map(Number)
-  );
-
-
-  function isValidSequence(sequence) {
-    for (let [x, y] of rules) {
-      const xIndex = sequence.indexOf(x);
-      const yIndex = sequence.indexOf(y);
-
-      if (xIndex !== -1 && yIndex !== -1 && xIndex > yIndex) {
-        return false;
+function getRecord(url, recordId) {
+  return fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`Ошибка при загрузке данных: ${response.status}`);
       }
-    }
-    return true;
-  }
+      return response.json();
+    })
+    .then(data => {
+      const record = data.records.find(record => record.id === recordId);
 
+      if (!record) {
+        throw new Error(`Запись не найдена, id: ${recordId}`);
+      }
 
-  let validCount = 0;
-  for (let sequence of sequences) {
-    if (isValidSequence(sequence)) {
-      validCount++;
-    }
-  }
-
-  return validCount;
+      return {
+        getTitle: () => record.title,
+        getSummary: () => record.summary,
+        getDetails: () => record.details
+      };
+    })
+    .catch(error => {
+      throw error;
+    });
 }
 
-module.exports = solution;
+module.exports = getRecord;

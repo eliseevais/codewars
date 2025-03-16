@@ -1,4 +1,4 @@
-export function getCompressedString(text: string): string {
+export const getCompressedString = (text: string): string  => {
   type SomeTypes = {
     [key: string]: number
   };
@@ -23,7 +23,7 @@ export function getCompressedString(text: string): string {
 
   const wordToIndex: SomeTypes = {};
   sortedWords.forEach((word, idx) => {
-    wordToIndex[word] = idx + 0; // Индексация с 0
+    wordToIndex[word] = idx + 0;
   });
 
   let result = '';
@@ -49,6 +49,9 @@ export function getCompressedString(text: string): string {
 
   return result;
 }
+
+const text1 = "hello world! привет - мир";
+console.log(getCompressedString(text1))
 
 
 // export function getCompressedString(text) {
@@ -100,3 +103,5 @@ export function getCompressedString(text: string): string {
 //
 //   return result;
 // }
+
+

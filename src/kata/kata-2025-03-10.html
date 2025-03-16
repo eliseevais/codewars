@@ -1,29 +1,29 @@
 <script>
 
-  function divisors(integer) {
-    if (!Number.isInteger(integer)) {
-      return "Введите целое число";
-    }
-    let result = [];
-    for (let i = 2; i <= integer; i++) {
-      if (integer % i === 0) {
-        result.push(i);
-      }
-    }
+//   function stray(numbers) {
+//     let newArr = numbers.map(num => numbers.indexOf(num) === numbers.lastIndexOf(num));
+//     let
+//   }
+//
+// console.log(stray([1, 1, 2]));
+// console.log(stray([1, 2, 1]));
+// console.log(stray([2, 1, 1]));
 
-    if (result.length === 1) {
-      if (result == integer) {
-        return `${integer} is prime`
+  function divisibleBy(numbers, divisor){
+    let res = [];
+    for(let i = 0; i < numbers.length; i++){
+      if (numbers[i] % divisor === 0){
+        res.push(numbers[i]);
       }
     }
-    else if (result.at(-1) == integer) {
-      return result.slice(0, -1);
-    }
+    return res;
   }
 
-  console.log(divisors(15))
-  console.log(divisors(13))
-  console.log(divisors(12))
+  console.log(divisibleBy([1,2,3,4,5,6], 2));
+  console.log(divisibleBy([1,2,3,4,5,6], 3));
+  console.log(divisibleBy([0,1,2,3,4,5,6], 4));
+  console.log(divisibleBy([0], 4));
+  console.log(divisibleBy([1,3,5], 2));
 
 </script>
 

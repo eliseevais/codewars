@@ -1,22 +1,28 @@
 <script>
-  // function basicOp(operation, value1, value2) {
-  //   let result;
-  //   if (operation.toString() === '+') {
-  //     result = value1 + value2
-  //   } else if (operation.toString() === '-') {
-  //     result = value1 - value2
-  //   } else if (operation.toString() === '*') {
-  //     result = value1 * value2
-  //   } else {
-  //     result = value1 / value2
-  //   }
-  //   return result;
+  // function greet() {
+  //   return 'hello world!'
   // }
-  //
-  // console.log(basicOp('+', 4, 7))
 
-  // let litres = (time) => Math.floor(time * 0.5);
-  //
-  // console.log(litres(11.8))
+  function lovefunc(flower1, flower2) {
+    let res1;
+    let res2;
+    let resFinal;
+
+    if (flower1 % 2 === 1) {
+      res1 = 1
+    } else res1 = 0
+
+    if (flower2 % 2 === 1) {
+      res2 = 1
+    } else res2 = 0
+
+    if (res1 === 1 && res2 === 0) {
+      resFinal = true
+    } else if (res1 === 0 && res2 === 1) {
+      resFinal = true
+    } else resFinal = false
+    return resFinal
+  }
+
 
 </script>

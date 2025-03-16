@@ -1,0 +1,21 @@
+<script>
+  // function findNeedle(haystack) {
+  //   let result = haystack.indexOf(haystack.find(el => el === 'needle'))
+  //   return `found the needle at position ${result}`
+  // }
+  //
+  // let arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+  // findNeedle(arr)
+
+  function invert(array) {
+    return array.map(el => el * -1);
+  }
+
+  // console.log(invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5])
+  console.log(invert([1, 2, 3, 4, 5]))
+  // console.log(invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5])
+  console.log(invert([1, -2, 3, -4, 5]))
+  // console.log(invert([]) == [])
+  console.log(invert([]))
+
+</script>
