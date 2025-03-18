@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="all katas">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-03-18.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eliseevais&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/eliseevais/codewars.git&quot;,
+    &quot;accountId&quot;: &quot;6fcefc33-cd9f-4496-9ad4-3c3fbda4999a&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ZBPUYfZjTKIgI6XoubHtjW2DtN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.yandex-2025-02-23.ts.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.yandex1.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.yandex_task2-2025-02-23.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/study/7-code-wars/src/kata&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\7-code-wars\src\kata" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.yandex_task2-2025-02-23.ts">
+    <configuration name="yandex1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/kata/yandex1.js" working-dir="$PROJECT_DIR$/src/kata">
+      <method v="2" />
+    </configuration>
+    <configuration name="yandex_task1-2025-02-23.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/kata/yandex_task1-2025-02-23.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/src/kata">
+      <method v="2" />
+    </configuration>
+    <configuration name="yandex_task2-2025-02-23.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/kata/yandex_task2-2025-02-23.ts" typescript-loader="bundled" working-dir="$PROJECT_DIR$/src/kata">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.yandex_task2-2025-02-23.ts" />
+        <item itemvalue="Node.js.yandex1.js" />
+        <item itemvalue="Node.js.yandex_task1-2025-02-23.ts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="" />
+      <created>1701892516016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701892516016</updated>
+      <workItem from="1701892524938" duration="758000" />
+      <workItem from="1702586068932" duration="836000" />
+      <workItem from="1702635793273" duration="80000" />
+      <workItem from="1703017384911" duration="2211000" />
+      <workItem from="1703097389882" duration="21000" />
+      <workItem from="1704406432654" duration="2075000" />
+      <workItem from="1704470801104" duration="191000" />
+      <workItem from="1705952301201" duration="1587000" />
+      <workItem from="1706032739359" duration="10000" />
+      <workItem from="1706038954723" duration="864000" />
+      <workItem from="1706118723018" duration="44000" />
+      <workItem from="1706555528919" duration="299000" />
+      <workItem from="1706635441613" duration="13000" />
+      <workItem from="1707937261339" duration="1085000" />
+      <workItem from="1707938810804" duration="8000" />
+      <workItem from="1708696788832" duration="666000" />
+      <workItem from="1708711198126" duration="1328000" />
+      <workItem from="1708770879345" duration="17000" />
+      <workItem from="1708875550267" duration="1553000" />
+      <workItem from="1709491992630" duration="2119000" />
+      <workItem from="1709494763805" duration="9000" />
+      <workItem from="1710616232823" duration="2344000" />
+      <workItem from="1710665881443" duration="10000" />
+      <workItem from="1711916890409" duration="627000" />
+      <workItem from="1711993690742" duration="16000" />
+      <workItem from="1711998126801" duration="532000" />
+      <workItem from="1712077038969" duration="47000" />
+      <workItem from="1713124219611" duration="187000" />
+      <workItem from="1713203493806" duration="27000" />
+      <workItem from="1713691068914" duration="844000" />
+      <workItem from="1713713826841" duration="31000" />
+      <workItem from="1715442640530" duration="1156000" />
+      <workItem from="1715533801870" duration="5266000" />
+      <workItem from="1715791920050" duration="30000" />
+      <workItem from="1716756471897" duration="1277000" />
+      <workItem from="1716833162979" duration="36000" />
+      <workItem from="1717876715256" duration="1388000" />
+      <workItem from="1717935645792" duration="244000" />
+      <workItem from="1718207011884" duration="362000" />
+      <workItem from="1718207576142" duration="580000" />
+      <workItem from="1720639695749" duration="866000" />
+      <workItem from="1720720566871" duration="23000" />
+      <workItem from="1721556094317" duration="2646000" />
+      <workItem from="1721561400659" duration="26000" />
+      <workItem from="1722538674011" duration="1161000" />
+      <workItem from="1722695898343" duration="17000" />
+      <workItem from="1723402622970" duration="90000" />
+      <workItem from="1723486492438" duration="488000" />
+      <workItem from="1723490476179" duration="1387000" />
+      <workItem from="1723659259954" duration="55000" />
+      <workItem from="1723994275958" duration="1262000" />
+      <workItem from="1724266238561" duration="2001000" />
+      <workItem from="1724350929907" duration="2000" />
+      <workItem from="1724436665490" duration="237000" />
+      <workItem from="1726002545256" duration="1467000" />
+      <workItem from="1726122420406" duration="117000" />
+      <workItem from="1727611155075" duration="94000" />
+      <workItem from="1728076196665" duration="1819000" />
+      <workItem from="1728150611050" duration="14000" />
+      <workItem from="1740333048121" duration="13853000" />
+      <workItem from="1740393624294" duration="596000" />
+      <workItem from="1740419966488" duration="9000" />
+      <workItem from="1740738903207" duration="48000" />
+      <workItem from="1740746178221" duration="534000" />
+      <workItem from="1740847635790" duration="150000" />
+      <workItem from="1740848348063" duration="708000" />
+      <workItem from="1740916678382" duration="46000" />
+      <workItem from="1740919648655" duration="1047000" />
+      <workItem from="1740921148307" duration="2000" />
+      <workItem from="1741006052090" duration="1719000" />
+      <workItem from="1741450605491" duration="1244000" />
+      <workItem from="1741597163916" duration="5078000" />
+      <workItem from="1741613791472" duration="3000" />
+      <workItem from="1741616602107" duration="2000" />
+      <workItem from="1741692678988" duration="975000" />
+      <workItem from="1742040121922" duration="1033000" />
+      <workItem from="1742126147895" duration="3611000" />
+      <workItem from="1742282697970" duration="1775000" />
+    </task>
+    <task id="LOCAL-00001" summary="all katas">
+      <option name="closed" value="true" />
+      <created>1742132371157</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742132371157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="all katas" />
+    <option name="LAST_COMMIT_MESSAGE" value="all katas" />
+  </component>
+</project>
