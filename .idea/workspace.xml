@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="all katas">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-03-18.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-18-03 algorithm and fundamental">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-03-19.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +174,8 @@
       <workItem from="1741692678988" duration="975000" />
       <workItem from="1742040121922" duration="1033000" />
       <workItem from="1742126147895" duration="3611000" />
-      <workItem from="1742282697970" duration="1775000" />
+      <workItem from="1742282697970" duration="1802000" />
+      <workItem from="1742369650523" duration="1325000" />
     </task>
     <task id="LOCAL-00001" summary="all katas">
       <option name="closed" value="true" />
@@ -183,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742132371157</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2025-18-03 algorithm and fundamental">
+      <option name="closed" value="true" />
+      <created>1742284503728</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742284503728</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +201,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="all katas" />
-    <option name="LAST_COMMIT_MESSAGE" value="all katas" />
+    <MESSAGE value="2025-18-03 algorithm and fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-18-03 algorithm and fundamental" />
   </component>
 </project>

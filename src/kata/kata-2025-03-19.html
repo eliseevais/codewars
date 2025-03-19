@@ -1,0 +1,18 @@
+<script>
+  function generateRange(min, max, step){
+    let result = [];
+    for (let i = min; i <= max; i = i + step){
+      result.push(i)
+    }
+    return result;
+  }
+
+  console.log(generateRange(2, 10, 2)) //  [2, 4, 6, 8, 10]
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    let fuel = mpg * fuelLeft
+    return fuel >= distanceToPump ? true : false
+  };
+
+</script>
+
