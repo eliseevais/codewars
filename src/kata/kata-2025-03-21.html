@@ -1,0 +1,63 @@
+<script>
+  function doubleInteger(i) {
+    return i * 2;
+  }
+
+  const rps = (p1, p2) => {
+    if (p1 === "scissors" && p2 === "paper") {
+      return "Player 1 won!"
+    } else if (p1 === "scissors" && p2 === "rock") {
+      return "Player 2 won!"
+    } else if (p1 === "paper" && p2 === "scissors") {
+      return "Player 2 won!"
+    } else if (p1 === "paper" && p2 === "rock") {
+      return "Player 1 won!"
+    } else if (p1 === "rock" && p2 === "scissors") {
+      return "Player 1 won!"
+    } else if (p1 === "rock" && p2 === "paper") {
+      return "Player 2 won!"
+    } else if (p1 === p2) {
+      return "Draw!"
+    }
+  };
+
+  var min = function (list) {
+    return Math.min.apply(null, list);
+  }
+
+  var max = function (list) {
+    return Math.max.apply(null, list);
+  }
+
+  function arrayPlusArray(arr1, arr2) {
+    let sum = 0;
+    for (let i = 0; i < arr1.length; i++) {
+      sum += arr1[i];
+    }
+    for (let i = 0; i < arr2.length; i++) {
+      sum += arr2[i];
+    }
+    return sum;
+  }
+
+  function shortenToDate(longDate) {
+    let result;
+    result = longDate.split(",").shift();
+    return result
+  }
+
+  class Ship {
+    constructor(draft, crew) {
+      this.draft = draft
+      this.crew = crew
+    }
+
+    isWorthIt() {
+      let crewMass = this.crew * 1.5;
+      let diff = this.draft - crewMass
+      return diff > 20 ? true : false;
+    }
+  }
+
+</script>
+
