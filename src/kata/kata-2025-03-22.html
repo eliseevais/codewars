@@ -1,0 +1,25 @@
+<script>
+  function formatMoney(amount) {
+    let string = amount.toString();
+    if (Number.isInteger(amount)) {
+      return `$${string}.00`
+    }
+    let devidedSymbols = string.split('.');
+    if (devidedSymbols[1].length === 1) {
+      return `$${string}0`
+    } else if (devidedSymbols[1].length === 2) {
+      return `$${string}`
+    }
+    return string
+  }
+
+  function removeEveryOther(arr) {
+    let result = [];
+    for (let index = 0; index < arr.length; index = index + 2) {
+      result.push(arr[index]);
+    }
+    return result;
+  }
+
+</script>
+
