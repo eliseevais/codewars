@@ -1,0 +1,15 @@
+<script>
+  function elevator(left, right, call){
+    let diffRight = Math.abs(call - right);
+    let diffLeft = Math.abs(call - left);
+    if (diffRight > diffLeft){
+      return "left"
+    } else if (diffLeft > diffRight){
+      return "right"
+    } else if (diffLeft === diffRight){
+      return "right"
+    }
+  }
+
+</script>
+
