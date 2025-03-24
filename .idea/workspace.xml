@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-03-22 algorithm, array">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-03-23.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-03-23 algorithm">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-03-24.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,7 +179,8 @@
       <workItem from="1742462726164" duration="1447000" />
       <workItem from="1742538077855" duration="2979000" />
       <workItem from="1742626434311" duration="1915000" />
-      <workItem from="1742712654413" duration="360000" />
+      <workItem from="1742712654413" duration="711000" />
+      <workItem from="1742800178604" duration="2216000" />
     </task>
     <task id="LOCAL-00001" summary="all katas">
       <option name="closed" value="true" />
@@ -229,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742628355103</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2025-03-23 algorithm">
+      <option name="closed" value="true" />
+      <created>1742713358953</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742713358953</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +251,7 @@
     <MESSAGE value="2025-03-20 algorithm, array" />
     <MESSAGE value="2025-03-21 algorithm, array, OOP, date" />
     <MESSAGE value="2025-03-22 algorithm, array" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-03-22 algorithm, array" />
+    <MESSAGE value="2025-03-23 algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-03-23 algorithm" />
   </component>
 </project>

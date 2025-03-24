@@ -1,0 +1,21 @@
+<script>
+  function differenceInAges(ages){
+    let minAge = Math.min(...ages);
+    let maxAge = Math.max(...ages);
+    let difference = maxAge - minAge;
+    return [minAge, maxAge, difference];
+  }
+
+  function drawStairs(n) {
+    let enter = "\n"
+    let step = "I"
+    let space = " "
+    let result = "I";
+    for (let el = 1; el < n; el++) {
+      result = result + enter + space.repeat(el) + step
+    }
+    return result
+  }
+
+</script>
+
