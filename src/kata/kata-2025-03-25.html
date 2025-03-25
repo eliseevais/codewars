@@ -1,0 +1,29 @@
+<script>
+  function lowercaseCount(str) {
+    let arr = str.split("")
+    let result = []
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] == arr[i].match(/[a-z]/g)) {
+        result.push(arr[i])
+      }
+    }
+    return result.length
+  }
+
+  function firstNonConsecutive(arr) {
+    let result;
+    for (let index = 1; index < arr.length; index++) {
+      if (arr[index] - arr[index - 1] !== 1) {
+        return result = arr[index]
+      } else {
+        result = null
+      }
+    }
+    return result
+  }
+
+  console.log(firstNonConsecutive([1,2,3,4,6,7,8]))
+  console.log(firstNonConsecutive([1,2,3,4]))
+
+</script>
+
