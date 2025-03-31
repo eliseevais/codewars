@@ -1,0 +1,28 @@
+<script>
+  const cannonsReady = (gunners) => {
+    let searchItem = "nay";
+    let objectProperties = Object.values(gunners);
+    if (objectProperties.includes(searchItem)) {
+      return 'Shiver me timbers!';
+    } else {
+      return 'Fire!';
+    }
+  }
+
+  function well(x){
+    let result = [];
+    for (let i = 0; i < x.length; i++) {
+      if (x[i] === "good") {
+        result.push(x[i]);
+      }
+    }
+    if (result.length === 1 || result.length === 2) {
+      return 'Publish!';
+    } else if (result.length > 2) {
+      return 'I smell a series!';
+    } else {
+      return "Fail!"
+    }
+  }
+
+</script>
