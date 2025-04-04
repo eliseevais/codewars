@@ -1,0 +1,21 @@
+<script>
+
+  function match(candidate, job) {
+    if (!candidate.minSalary || !job.maxSalary) {
+      throw new Error("Missing salary information");
+    }
+    return candidate.minSalary * 0.9 <= job.maxSalary;
+  }
+
+  function strCount(str, letter){
+    let arr = str.split("");
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === letter) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+</script>

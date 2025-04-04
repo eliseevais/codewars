@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-04-02 string">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-04-03.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-04-03 refactor, fundamental">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-04-04.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +192,8 @@
       <workItem from="1743415871065" duration="1738000" />
       <workItem from="1743496770001" duration="1618000" />
       <workItem from="1743597637313" duration="1568000" />
-      <workItem from="1743696198861" duration="1030000" />
+      <workItem from="1743696198861" duration="1285000" />
+      <workItem from="1743751744232" duration="1532000" />
     </task>
     <task id="LOCAL-00001" summary="all katas">
       <option name="closed" value="true" />
@@ -330,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743598390189</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="2025-04-03 refactor, fundamental">
+      <option name="closed" value="true" />
+      <created>1743697483524</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1743697483524</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +363,7 @@
     <MESSAGE value="2025-03-31 algorithm array" />
     <MESSAGE value="2025-04-01 algorithm array" />
     <MESSAGE value="2025-04-02 string" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-04-02 string" />
+    <MESSAGE value="2025-04-03 refactor, fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-04-03 refactor, fundamental" />
   </component>
 </project>
