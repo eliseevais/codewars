@@ -1,0 +1,25 @@
+<script>
+  function animals(heads, legs) {
+    let chickenCount = 0;
+    let cowCount = 0;
+
+    while (cowCount <= heads) {
+      chickenCount = heads - cowCount;
+      if ((chickenCount * 2 + cowCount * 4) === legs) {
+        return [chickenCount, cowCount];
+      }
+      cowCount = cowCount + 1;
+    }
+    return "No solutions";
+  }
+
+  function correct(string) {
+    let newStr1 = string.replace(/5/g, 'S')
+    let newStr2 = newStr1.replace(/0/g, 'O')
+    let newStr3 = newStr2.replace(/1/g, 'I')
+    return newStr3
+  }
+
+  console.log(correct("L0ND0N"))
+
+</script>
