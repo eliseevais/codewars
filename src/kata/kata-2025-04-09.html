@@ -1,0 +1,17 @@
+<script>
+
+  function addLength(str) {
+    let arr = str.split(' ');
+    let result = arr.map((el) => {
+       return `${el} ${el.length}`;
+    })
+    return result;
+  }
+
+  function reverse(string){
+    let arr = string.split(' ');
+    let result = arr.reverse().join(' ');
+    return result;
+  }
+
+</script>
