@@ -1,0 +1,8 @@
+<script>
+
+  function eachCons(array, n) {
+    return Array.from({ length: array.length - n + 1 },
+      (_, i) => array.slice(i, i + n))
+  }
+
+</script>
