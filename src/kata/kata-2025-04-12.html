@@ -1,0 +1,17 @@
+<script>
+
+  function symmetricPoint(p, q) {
+    let [pX, pY] = p;
+    let [qX, qY] = q;
+
+    let resultX = 2 * qX - pX;
+    let resultY = 2 * qY - pY;
+
+    return [resultX, resultY];
+  }
+
+  // q = (p + p1) / 2
+  // 2 * q = p + p1
+  // p1 = 2 * q - p
+
+</script>
