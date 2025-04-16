@@ -1,0 +1,11 @@
+<script>
+
+  function iceBrickVolume(radius, bottleLength, rimLength) {
+    // use Pythagorean theorem
+    let square = Math.pow((radius * 2), 2);
+    let cathetus = Math.sqrt(square / 2);
+    let volume = cathetus * cathetus * (bottleLength - rimLength);
+    return Math.round(volume);
+  }
+
+</script>
