@@ -1,0 +1,14 @@
+<script>
+
+  function array(string) {
+    let arr = string.split(",");
+
+    if (arr.length < 3) return null;
+
+    arr.splice(0, 1);
+    arr.splice(-1, 1);
+    let newStr = arr.join(" ");
+    return newStr;
+  }
+
+</script>
