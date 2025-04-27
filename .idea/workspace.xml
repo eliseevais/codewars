@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-04-25 string">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-04-26.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-04-26 string">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-04-27.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +215,8 @@
       <workItem from="1745401692436" duration="1098000" />
       <workItem from="1745491189162" duration="1099000" />
       <workItem from="1745573885830" duration="912000" />
-      <workItem from="1745675521718" duration="1109000" />
+      <workItem from="1745675521718" duration="1252000" />
+      <workItem from="1745741976856" duration="7593000" />
     </task>
     <task id="LOCAL-00001" summary="all katas">
       <option name="closed" value="true" />
@@ -513,14 +514,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745576442190</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2025-04-26 string">
+      <option name="closed" value="true" />
+      <created>1745676774033</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1745676774033</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2025-03-29 string" />
     <MESSAGE value="2025-03-30 algorithm array" />
     <MESSAGE value="2025-03-31 algorithm array" />
     <MESSAGE value="2025-04-01 algorithm array" />
@@ -545,6 +553,7 @@
     <MESSAGE value="2025-04-23 string" />
     <MESSAGE value="2025-04-24 string" />
     <MESSAGE value="2025-04-25 string" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-04-25 string" />
+    <MESSAGE value="2025-04-26 string" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-04-26 string" />
   </component>
 </project>
