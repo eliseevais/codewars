@@ -1,0 +1,12 @@
+<script>
+
+  function contamination(text, char){
+    if (text.length === 0 || char === "") {
+      return ""
+    }
+    let arr = text.split("");
+    let result = arr.map((el) => char);
+    return result.join('');
+  }
+
+</script>
