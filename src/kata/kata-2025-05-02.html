@@ -1,0 +1,19 @@
+<script>
+  function sumArray(array) {
+    if (array === null || array === undefined || array.length < 3 ) {
+      return 0;
+    }
+
+    let sum = 0;
+    let min = Math.min(...array);
+    let max = Math.max(...array);
+
+    for (let i = 0; i < array.length; i++) {
+      sum = sum + array[i];
+    }
+
+    let result = sum - min - max;
+    return result
+  }
+
+</script>
