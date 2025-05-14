@@ -1,0 +1,12 @@
+<script>
+
+  function dBScale(intensity) {
+    let a = intensity / Math.pow(10, -12)
+    let b = Math.log10(a)
+    let c = 10 * b
+    return c
+  }
+
+  dBScale(10)
+
+</script>
