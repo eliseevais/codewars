@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-05-05 fundamentals">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-05-12.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-05-17 fundamental">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -226,31 +225,12 @@
       <workItem from="1746264072488" duration="297000" />
       <workItem from="1746386339774" duration="10000" />
       <workItem from="1746433694944" duration="1214000" />
-      <workItem from="1747039903542" duration="994000" />
-    </task>
-    <task id="LOCAL-00001" summary="all katas">
-      <option name="closed" value="true" />
-      <created>1742132371157</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1742132371157</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2025-18-03 algorithm and fundamental">
-      <option name="closed" value="true" />
-      <created>1742284503728</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1742284503728</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2025-19-03 algorithm">
-      <option name="closed" value="true" />
-      <created>1742371043414</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1742371043414</updated>
+      <workItem from="1747039903542" duration="1179000" />
+      <workItem from="1747132005704" duration="277000" />
+      <workItem from="1747213166139" duration="1452000" />
+      <workItem from="1747301284171" duration="948000" />
+      <workItem from="1747388065569" duration="903000" />
+      <workItem from="1747477247175" duration="266000" />
     </task>
     <task id="LOCAL-00004" summary="2025-03-20 algorithm, array">
       <option name="closed" value="true" />
@@ -596,19 +576,61 @@
       <option name="project" value="LOCAL" />
       <updated>1746434377913</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="2025-05-12 refactor">
+      <option name="closed" value="true" />
+      <created>1747041593482</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1747041593482</updated>
+    </task>
+    <task id="LOCAL-00048" summary="2025-05-13 fundamental">
+      <option name="closed" value="true" />
+      <created>1747213316134</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1747213316134</updated>
+    </task>
+    <task id="LOCAL-00049" summary="2025-05-14 algorithm">
+      <option name="closed" value="true" />
+      <created>1747214622177</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1747214622177</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2025-05-15 fundamental">
+      <option name="closed" value="true" />
+      <created>1747301621440</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1747301621440</updated>
+    </task>
+    <task id="LOCAL-00051" summary="2025-05-16 fundamental">
+      <option name="closed" value="true" />
+      <created>1747388918689</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1747388918689</updated>
+    </task>
+    <task id="LOCAL-00052" summary="2025-05-17 fundamental">
+      <option name="closed" value="true" />
+      <created>1747477483089</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1747477483090</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2025-04-07 algorithm, string" />
-    <MESSAGE value="2025-04-08 string" />
-    <MESSAGE value="2025-04-09 algorithm, string" />
-    <MESSAGE value="2025-04-10 algorithm" />
-    <MESSAGE value="2025-04-11 string slice" />
-    <MESSAGE value="2025-04-12 algorithm" />
     <MESSAGE value="2025-04-13 algorithm" />
     <MESSAGE value="2025-04-14 algorithm" />
     <MESSAGE value="2025-04-16 algorithm" />
@@ -628,6 +650,12 @@
     <MESSAGE value="2025-05-03 fundamental" />
     <MESSAGE value="2025-05-05 fundamental" />
     <MESSAGE value="2025-05-05 fundamentals" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-05-05 fundamentals" />
+    <MESSAGE value="2025-05-12 refactor" />
+    <MESSAGE value="2025-05-13 fundamental" />
+    <MESSAGE value="2025-05-14 algorithm" />
+    <MESSAGE value="2025-05-15 fundamental" />
+    <MESSAGE value="2025-05-16 fundamental" />
+    <MESSAGE value="2025-05-17 fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-05-17 fundamental" />
   </component>
 </project>
