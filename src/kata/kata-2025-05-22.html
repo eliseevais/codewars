@@ -1,0 +1,12 @@
+<script>
+
+  function bloodAlcoholContent(drinks, weight, sex, time){
+    let {ounces, abv} = drinks;
+    let alcohol = ounces * abv
+    let r;
+    sex === "male" ? r = 0.73 : r = 0.66
+    let bac = (alcohol * 5.14 / weight * r) - (0.015 * time)
+    return +bac.toFixed(4);
+  }
+
+</script>
