@@ -1,0 +1,13 @@
+<script>
+
+  function sorter(textbooks) {
+    return textbooks.sort(function(a, b) {
+      if (a.toLowerCase() < b.toLowerCase()) return 1;
+      if (a.toLowerCase() > b.toLowerCase()) return -1;
+      return 0;
+    });
+  }
+
+  console.log(sorter([1, 2, 3, 4, 5]));
+
+</script>
