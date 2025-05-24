@@ -1,0 +1,52 @@
+<script>
+
+  solution = (arr_val, arr_unit) => {
+    // value of G = 6.67 × 10−11 N⋅kg−2⋅m2
+    let constG = 6.67 * Math.pow(10, -11)
+    let m1 = arr_val[0]
+    let m2 = arr_val[1]
+    let r = arr_val[2]
+
+
+    let unitM1 = arr_unit[0]
+    let unitM2 = arr_unit[1]
+    let unitR = arr_unit[2]
+
+    if (unitM1 === "g") {
+      m1 = m1 * 0.001;
+    } else if (unitM1 === "mg") {
+      m1 = m1 * 0.000001;
+    } else if (unitM1 === "μg") {
+      m1 = m1 * 0.000000001
+    } else if (unitM1 === "lb") {
+      m1 = m1 * 0.453592
+    }
+
+    if (unitM2 === "g") {
+      m2 = m2 * 0.001;
+    } else if (unitM2 === "mg") {
+      m2 = m2 * 0.000001;
+    } else if (unitM2 === "μg") {
+      m2 = m2 * 0.000000001
+    } else if (unitM2 === "lb") {
+      m2 = m2 * 0.453592
+    }
+
+    if (unitR === "cm") {
+      r = r / 100
+    } else if (unitR === "mm") {
+      r = r / 1000
+    } else if (unitR === "μm") {
+      r = r / 1000000
+    } else if (unitR === "ft") {
+      r = r / 3.28084
+    }
+
+    let gravity = constG * (m1 * m2) / Math.pow(r, 2)
+
+    return gravity
+  }
+
+  console.log(solution([1000, 1000, 100], ["g", "kg", "m"]))
+
+</script>
