@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-05-22 algorithm">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-05-23.html" afterDir="false" />
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-05-26 fundamental">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-05-28.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +63,11 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\study\7-code-wars\src\kata" />
+      <recent name="D:\study\7-code-wars\src\todolist-dop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\study\7-code-wars\src\todolist-dop" />
+      <recent name="D:\study\7-code-wars\src" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.yandex_task2-2025-02-23.ts">
@@ -237,47 +242,12 @@
       <workItem from="1747738001137" duration="535000" />
       <workItem from="1747824013495" duration="268000" />
       <workItem from="1747901457912" duration="2090000" />
-      <workItem from="1748000338649" duration="1243000" />
-    </task>
-    <task id="LOCAL-00008" summary="2025-03-24 algorithm">
-      <option name="closed" value="true" />
-      <created>1742804167446</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1742804167446</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2025-03-25 algorithm, array">
-      <option name="closed" value="true" />
-      <created>1742889975227</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1742889975227</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2025-03-26 algorithm, array">
-      <option name="closed" value="true" />
-      <created>1742987037142</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1742987037142</updated>
-    </task>
-    <task id="LOCAL-00011" summary="2025-03-27 algorithm">
-      <option name="closed" value="true" />
-      <created>1743065030957</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1743065030957</updated>
-    </task>
-    <task id="LOCAL-00012" summary="2025-03-28 string">
-      <option name="closed" value="true" />
-      <created>1743157096460</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1743157096460</updated>
+      <workItem from="1748000338649" duration="1383000" />
+      <workItem from="1748006033576" duration="3175000" />
+      <workItem from="1748098328458" duration="1753000" />
+      <workItem from="1748174964786" duration="674000" />
+      <workItem from="1748253159735" duration="1522000" />
+      <workItem from="1748422503302" duration="297000" />
     </task>
     <task id="LOCAL-00013" summary="2025-03-29 string">
       <option name="closed" value="true" />
@@ -631,17 +601,58 @@
       <option name="project" value="LOCAL" />
       <updated>1747903413450</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="2025-05-23 sorting">
+      <option name="closed" value="true" />
+      <created>1748001710888</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1748001710889</updated>
+    </task>
+    <task id="LOCAL-00058" summary="2025-05-23 sorting">
+      <option name="closed" value="true" />
+      <created>1748001721976</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1748001721976</updated>
+    </task>
+    <task id="LOCAL-00059" summary="2025-05-23 generic function">
+      <option name="closed" value="true" />
+      <created>1748009215942</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1748009215942</updated>
+    </task>
+    <task id="LOCAL-00060" summary="2025-05-24 algorithm">
+      <option name="closed" value="true" />
+      <created>1748100044714</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1748100044714</updated>
+    </task>
+    <task id="LOCAL-00061" summary="2025-05-26 fundamental">
+      <option name="closed" value="true" />
+      <created>1748254091798</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1748254091798</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/todolist-dop/todolist-DOP-2025-05-23.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2025-04-19 string" />
-    <MESSAGE value="2025-04-20 string" />
-    <MESSAGE value="2025-04-22 array" />
-    <MESSAGE value="2025-04-23 string" />
     <MESSAGE value="2025-04-24 string" />
     <MESSAGE value="2025-04-25 string" />
     <MESSAGE value="2025-04-26 string" />
@@ -663,6 +674,10 @@
     <MESSAGE value="2025-05-20 fundamental" />
     <MESSAGE value="2025-05-21 fundamental" />
     <MESSAGE value="2025-05-22 algorithm" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-05-22 algorithm" />
+    <MESSAGE value="2025-05-23 sorting" />
+    <MESSAGE value="2025-05-23 generic function" />
+    <MESSAGE value="2025-05-24 algorithm" />
+    <MESSAGE value="2025-05-26 fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-05-26 fundamental" />
   </component>
 </project>
