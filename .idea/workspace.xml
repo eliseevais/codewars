@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-05-31 fundamental">
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-06-02 fundamental">
+      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-06-04.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,14 +252,8 @@
       <workItem from="1748513206015" duration="750000" />
       <workItem from="1748599163665" duration="469000" />
       <workItem from="1748692273141" duration="1231000" />
-    </task>
-    <task id="LOCAL-00017" summary="2025-04-02 string">
-      <option name="closed" value="true" />
-      <created>1743598390189</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1743598390189</updated>
+      <workItem from="1748857658394" duration="225000" />
+      <workItem from="1749023991189" duration="364000" />
     </task>
     <task id="LOCAL-00018" summary="2025-04-03 refactor, fundamental">
       <option name="closed" value="true" />
@@ -644,7 +639,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748693495253</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="2025-06-02 fundamental">
+      <option name="closed" value="true" />
+      <created>1748857875791</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1748857875791</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,8 +658,18 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2025-04-29 array" />
     <MESSAGE value="2025-04-30 string" />
     <MESSAGE value="2025-05-01 array" />
     <MESSAGE value="2025-05-02 fundamental" />
@@ -681,6 +694,7 @@
     <MESSAGE value="2025-05-29 string" />
     <MESSAGE value="2025-05-30 fundamental" />
     <MESSAGE value="2025-05-31 fundamental" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-05-31 fundamental" />
+    <MESSAGE value="2025-06-02 fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-06-02 fundamental" />
   </component>
 </project>
