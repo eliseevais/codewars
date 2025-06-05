@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-06-02 fundamental">
-      <change afterPath="$PROJECT_DIR$/src/kata/kata-2025-06-04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a9e24f6-a09d-4ddf-9e0e-ae77acafb4f0" name="Changes" comment="2025-06-04 fundamental" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,15 +250,7 @@
       <workItem from="1748599163665" duration="469000" />
       <workItem from="1748692273141" duration="1231000" />
       <workItem from="1748857658394" duration="225000" />
-      <workItem from="1749023991189" duration="364000" />
-    </task>
-    <task id="LOCAL-00018" summary="2025-04-03 refactor, fundamental">
-      <option name="closed" value="true" />
-      <created>1743697483524</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1743697483524</updated>
+      <workItem from="1749023991189" duration="463000" />
     </task>
     <task id="LOCAL-00019" summary="2025-04-04 algorithm, string">
       <option name="closed" value="true" />
@@ -647,7 +636,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748857875791</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="2025-06-04 fundamental">
+      <option name="closed" value="true" />
+      <created>1749024441812</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1749024441812</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +667,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2025-04-30 string" />
     <MESSAGE value="2025-05-01 array" />
     <MESSAGE value="2025-05-02 fundamental" />
     <MESSAGE value="2025-05-03 fundamental" />
@@ -695,6 +691,7 @@
     <MESSAGE value="2025-05-30 fundamental" />
     <MESSAGE value="2025-05-31 fundamental" />
     <MESSAGE value="2025-06-02 fundamental" />
-    <option name="LAST_COMMIT_MESSAGE" value="2025-06-02 fundamental" />
+    <MESSAGE value="2025-06-04 fundamental" />
+    <option name="LAST_COMMIT_MESSAGE" value="2025-06-04 fundamental" />
   </component>
 </project>
