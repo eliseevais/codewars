@@ -1,0 +1,14 @@
+<script>
+
+  function isPalindrome(x) {
+    let wordToLowerCase = x.toLowerCase();
+    let arr = wordToLowerCase.split('');
+    let newArray = arr.reverse();
+    let newWord = newArray.join('');
+    if (wordToLowerCase === newWord) {
+      return true
+    }
+    return false
+  }
+
+</script>
