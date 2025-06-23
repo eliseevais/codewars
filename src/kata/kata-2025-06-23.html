@@ -1,0 +1,13 @@
+<script>
+
+  function sumOfDifferences(arr) {
+    let newArr = arr.sort((a, b) => b - a);
+    let result = 0;
+    for (let i = 0; i < newArr.length - 1; i++) {
+      result = result + newArr[i] - newArr[i + 1];
+    }
+    return result;
+  }
+
+
+</script>
