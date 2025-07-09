@@ -1,0 +1,14 @@
+<script>
+
+  function duckDuckGoose(players, goose) {
+    const obj = players.reduce((object, value, index) => {
+      return {...object, [index + 1]: value};
+    }, {});
+
+    const fixedGoose = ((goose - 1)) % players.length + 1
+    return obj[fixedGoose].name;
+  }
+
+  console.log(duckDuckGoose(["a", "b", "c", "d", "c"], 1))
+
+</script>
