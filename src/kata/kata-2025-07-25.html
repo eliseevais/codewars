@@ -1,0 +1,14 @@
+<script>
+
+  function whoIsPaying(name){
+    if (name.length <= 2) {
+      return [name]
+    } else {
+      let res = name.slice(0, 2)
+      return [name, res]
+    }
+  }
+
+  console.log(whoIsPaying("John"));
+
+</script>
