@@ -6,4 +6,26 @@
 
   addToArray("codewars")
 
+  function distinct(a) {
+    let result = [...new Set(a)];
+    return result;
+  }
+
+  function correctPolishLetters(string) {
+    let replacements = ({
+        'ą': 'a',
+        'ć': 'c',
+        'ę': 'e',
+        'ł': 'l',
+        'ń': 'n',
+        'ó': 'o',
+        'ś': 's',
+        'ź': 'z',
+        'ż': 'z'
+      }
+    );
+
+    return string.replace(/[ąćęłńóśźż]/g, char => replacements[char]);
+  }
+
 </script>
