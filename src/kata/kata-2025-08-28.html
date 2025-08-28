@@ -1,0 +1,17 @@
+<script>
+
+  function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    const numbers = Array.of(laLigaGoals, copaDelReyGoals, championsLeagueGoals);
+    const sum = numbers.reduce((acc, current) => acc + current, 0 );
+    return sum;
+  }
+
+  function saleHotdogs(n){
+    return n < 5
+      ? 100 * n
+      : n >= 10
+        ? 90 * n
+        : 95 * n
+  }
+
+</script>
