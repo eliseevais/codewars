@@ -1,0 +1,16 @@
+<script>
+
+  function combat(health, damage) {
+    let result = health - damage
+    return result > 0 ? result : 0
+  }
+
+  function xor(a, b) {
+    let mySet = new Set([a, b])
+    if (mySet.has(true) && mySet.size === 2) {
+      return true
+    }
+    return false
+  }
+
+</script>
