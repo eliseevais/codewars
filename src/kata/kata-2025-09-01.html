@@ -1,0 +1,15 @@
+<script>
+
+  function add(a, b){
+    return +a === +b ? true : false;
+  }
+
+
+  function countWords(str) {
+    str = str.replaceAll("﻿", ' ');
+    let arr = str.split(' ');
+    let result = arr.filter((elem) => elem !== "" )
+    return result.length;
+  }
+
+</script>
