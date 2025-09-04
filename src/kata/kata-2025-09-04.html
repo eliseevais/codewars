@@ -1,0 +1,18 @@
+<script>
+
+  function hexToDec(hexString){
+    return parseInt(hexString, 16)
+  }
+
+  function getSize(width, height, depth) {
+    let v = width * height * depth;
+    let s = 2 * (width * depth + width * height + depth * height);
+    return [s, v]
+  }
+
+  function move (position, roll) {
+    let result = position + roll * 2
+    return result
+  }
+
+</script>
