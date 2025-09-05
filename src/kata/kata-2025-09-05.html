@@ -1,0 +1,28 @@
+<script>
+
+  function getChar(c){
+    return String.fromCharCode(c);
+  }
+
+  function replace(s) {
+    let arr = "aeiou".split("");
+    let vowelSet = new Set(arr);
+
+    let resultArr = []
+    let arrFromS = s.split("");
+
+    for (let i = 0; i < arrFromS.length; i++) {
+      if (vowelSet.has(arrFromS[i].toLowerCase())) {
+        resultArr.push("!");
+      }
+      else {
+        resultArr.push(arrFromS[i]);
+      }
+    }
+    let result = resultArr.join("");
+    return result;
+  }
+
+  console.log(replace("Hi!"));
+
+</script>
