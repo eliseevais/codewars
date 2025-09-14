@@ -1,0 +1,28 @@
+<script>
+
+  function animal(obj){
+      return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+  }
+
+  function greet(name){
+    if (name === "Johnny") {
+      return "Hello, my love!";
+    }
+    return `Hello, ${name}!`;
+  }
+
+  function feast(beast, dish) {
+    if (beast.charAt(0) === dish.charAt(0)
+      && beast.charAt(beast.length - 1) === dish.charAt(dish.length - 1)) {
+      return true
+    }
+    return false
+  }
+
+  function oddCount(n){
+    let result = 0;
+    result = Math.floor(n/2);
+    return result;
+  }
+
+</script>
