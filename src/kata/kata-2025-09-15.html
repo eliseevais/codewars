@@ -1,0 +1,34 @@
+<script>
+
+  function derive(coefficient,exponent) {
+    let multiply = +coefficient * +exponent;
+    let exponentRes = +exponent - 1;
+
+    return `${multiply}x^${exponentRes}`;
+  }
+
+  function dutyFree(normPrice, discount, hol){
+    let diff = normPrice * discount / 100;
+    let res = Math.floor(hol / diff);
+    return res;
+  }
+
+  function cubeChecker(volume, side){
+    if (volume <=0 || side <= 0) {
+      return false;
+    }
+    let square = volume / side;
+    let res = Math.sqrt(square);
+    return Number.isInteger(res);
+  }
+
+  function include(arr, item){
+    for (let el of arr) {
+      if (el === item) {
+        return true;
+      }
+    }
+    return false
+  }
+
+</script>
