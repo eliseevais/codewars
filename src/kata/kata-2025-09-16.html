@@ -1,0 +1,47 @@
+<script>
+
+  function sumMul(n,m){
+    if (n <= 0 || m <= 0) {
+      return "INVALID";
+    }
+    else if (n >= m) {
+      return 0;
+    }
+    let arr = [];
+    for (let i = n; i < m; i++) {
+      if (i % n === 0) {
+        arr.push(i)
+      }
+    }
+    let res = arr.reduce((acc, currentValue) => acc + currentValue, 0)
+    return res;
+  }
+
+  function createArray(number) {
+    const newArray = [];
+    for (let counter = 1; counter <= number; counter++) {
+      newArray.push(counter);
+    }
+    return newArray;
+  }
+
+  function checkAlive (health) {
+    if (health <= 0) {
+      return false
+    }
+    return true
+  }
+
+  function spEng(sentence){
+    let word = "english"
+    if (sentence.toLowerCase().includes(word)){
+      return true
+    }
+    return false
+  }
+
+  function howManyLightsabersDoYouOwn(name) {
+    return (name === "Zach") ? 18 : 0
+  }
+
+</script>
