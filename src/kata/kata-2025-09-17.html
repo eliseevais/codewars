@@ -51,4 +51,57 @@
     return arr[diffFromFullCycle - 1]
   }
 
+  function printArray(array){
+    return array.join();
+  }
+
+  function add(a,b){
+    return a + b;
+  }
+
+  function divide(a,b){
+    return a / b
+  }
+
+  function multiply(a,b){
+    return a * b
+  }
+
+  function mod(a,b){
+    return a % b
+  }
+
+  function exponent(a,b){
+    return a ** b
+  }
+
+  function subt(a,b){
+    return a - b
+  }
+
+  function twoSort(s) {
+    let arr = s.sort()
+    let firstElement = arr[0];
+    let arrNew = firstElement.split("");
+    let str = arrNew.join("***")
+    return str;
+  }
+
+  function helloWorld() {
+    let str = "Hello World!"
+    console.log(str);
+  }
+
+  var a = "code";
+  var b = "wa.rs";
+  var name = a + b;
+
+  function position(letter){
+    let num = letter.toLowerCase().charCodeAt(0);
+    let res = num - 96
+    return `Position of alphabet: ${res}`
+  }
+
+  console.log(position("a"));
+
 </script>
