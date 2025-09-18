@@ -1,0 +1,53 @@
+<script>
+
+  function tripleTrouble(one, two, three){
+    let res = '';
+    for (let i = 0; i < one.length; i++) {
+      res = res + one[i] + two[i] + three[i];
+    }
+    return res;
+  }
+
+  function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+    let resBlue = blueStart - bluePulled;
+    let resRed = redStart - redPulled;
+    let probability = resBlue / (resRed + resBlue);
+    return probability;
+  }
+
+  function binToDec(bin) {
+    return parseInt(bin, 2)
+  }
+
+  function isVow(a){
+    let obj = {
+      97: 'a',
+      101: 'e',
+      105: 'i',
+      111: 'o',
+      117: 'u'
+    }
+    let keys = Object.keys(obj);
+    let res = []
+    for (let i = 0; i < a.length; ++i) {
+      if (keys.includes(a[i].toString())) {
+        res.push(obj[a[i]])
+      } else {
+        res.push(a[i])
+      }
+    }
+    return res
+  }
+
+  function correctTail(body, tail) {
+    let sub = body[body.length - 1];
+
+    if (sub === tail) {
+      return true
+    } else {
+      return false
+    }
+  }
+
+
+</script>
