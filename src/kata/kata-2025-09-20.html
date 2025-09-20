@@ -1,0 +1,23 @@
+<script>
+
+  function convertToCelsius(fahrenheit) {
+    let celsius = (fahrenheit  - 32) * (5/9)
+    return celsius
+  }
+
+  function weatherInfo(temp) {
+    let c = convertToCelsius(temp)
+    if (c > 0)
+      return (c + " is freezing temperature")
+    else
+      return (c + " is above freezing temperature")
+  }
+
+  function seatsInTheater(nCols, nRows, col, row) {
+    let nColsDiff = nCols - col + 1
+    let nRowsDiff = nRows - row
+    let res = nColsDiff * nRowsDiff
+    return res
+  }
+
+</script>
