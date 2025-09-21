@@ -1,0 +1,47 @@
+<script>
+
+  function twoDecimalPlaces(n) {
+    return +n.toFixed(2)
+  }
+
+  function calculator(a,b,sign){
+    let result;
+    if (typeof a === 'number' && typeof b === 'number') {
+      switch (sign) {
+        case '+': {
+          return result = a + b
+        }
+        case '-': {
+          return result = a - b
+        }
+        case '*': {
+          return result = a * b
+        }
+        case '/': {
+          return result = a / b
+        }
+        default: {
+          return "unknown value"
+        }
+      }
+    }
+    return "unknown value";
+  }
+
+  function squareArea(A){
+    let s = (4 * A ** 2) / Math.PI ** 2
+    return +s.toFixed(2);
+  }
+
+  function arrayMadness(a, b) {
+    let arrA = a.map((element) => element ** 2 );
+    let arrB = b.map((element) => element ** 3 );
+    let sumA = arrA.reduce((acc, curEl) => acc + curEl, 0);
+    let sumB = arrB.reduce((acc, curEl) => acc + curEl, 0);
+    return sumA > sumB ? true : false;
+  }
+
+  console.log(arrayMadness([4,5,6],[1,2,3]))
+  console.log(arrayMadness([5,6,7],[4,5,6]))
+
+</script>
