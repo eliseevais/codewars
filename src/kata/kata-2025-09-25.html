@@ -1,0 +1,30 @@
+<script>
+
+  const solve = (x, y) => x / y
+
+  function validateUsr(username) {
+    const res = /^[a-z0-9_]{4,16}$/.test(username)
+    return res;
+  }
+
+  function wrap(value) {
+    let obj = new Object();
+    obj.value = value;
+    return obj;
+  }
+
+  function remove (string) {
+    let newStr = string.replaceAll("!", "");
+    return newStr + "!";
+  }
+
+  function getStatus(isBusy) {
+    var msg = isBusy === true
+      ? "busy"
+      : "available";
+    return {
+     status: msg
+    };
+  }
+
+</script>
