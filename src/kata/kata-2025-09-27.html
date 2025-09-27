@@ -1,0 +1,49 @@
+<script>
+
+  function Counter() {
+    this.value = 0;
+  }
+
+  Counter.prototype.increase = function() {
+    return this.value++;
+  };
+
+  Counter.prototype.getValue = function()  {
+    return this.value;
+  };
+
+  Counter.prototype.reset = function()  {
+    return this.value = 0;
+  };
+
+  function Warrior(n){
+    let warriorName = n;
+    this.name = function (newName) {
+      if (newName !== undefined) {
+        warriorName = newName;
+      }
+      return warriorName;
+    }
+  }
+
+  Warrior.prototype.toString = function(){
+    return "Hi! my name's " + this.name();
+  }
+
+  class Labrador extends Dog {
+    constructor(name, age, gender, master) {
+      super(name, age, gender );
+      this.species = "Labrador";
+      this.size = "Large";
+      this.master = master;
+      this.loyal = true;
+    }
+  }
+
+  function validateCode (code) {
+    var reg = new RegExp('^[0-3]$');
+    return reg.test(code.toString()[0]);
+  }
+
+
+</script>
