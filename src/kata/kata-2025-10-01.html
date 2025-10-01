@@ -1,0 +1,57 @@
+<script>
+
+  let websites = []
+  function addToArr(word) {
+    let num = 1000;
+    while (num > 0) {
+      num = num - 1;
+      websites.push(word);
+    }
+    return websites;
+  }
+
+  function calculateTip(amount, rating) {
+    let tip;
+    switch (true) {
+      case rating.toLowerCase() === "terrible":
+        tip = 0;
+        break;
+      case rating.toLowerCase() === "poor":
+        tip = 5;
+        break;
+      case rating.toLowerCase() === "good":
+        tip = 10;
+        break;
+      case rating.toLowerCase() === "great":
+        tip = 15;
+        break;
+      case rating.toLowerCase() === "excellent":
+        tip = 20;
+        break;
+      default:
+        return "Rating not recognised"
+    }
+    let amountTips = Math.ceil(amount * tip / 100);
+    return amountTips;
+  }
+
+  function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    let sharkTime = sharkDistance / sharkSpeed;
+    let youTime = pontoonDistance / youSpeed;
+    let sharkTimeWithDolphin = sharkTime * 2;
+    if (dolphin === true) {
+      return youTime < sharkTimeWithDolphin ? "Alive!" : "Shark Bait!";
+    }
+    return youTime < sharkTime ? "Alive!" : "Shark Bait!";
+  }
+
+
+  function _if(bool, func1, func2) {
+    if (bool) {
+      return func1();
+    } else {
+      return func2()
+    }
+  }
+
+</script>
