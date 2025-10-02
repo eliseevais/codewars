@@ -1,0 +1,42 @@
+<script>
+
+  function Sleigh() {}
+
+  Sleigh.prototype.authenticate = function(name, password) {
+    return name === "Santa Claus" && password === "Ho Ho Ho!";
+  };
+
+  function getASCII(c){
+    return c.charCodeAt()
+  }
+
+  function uniTotal (string) {
+    let arr = string.split("")
+    let arrASCII = arr.map((element) => element.charCodeAt() )
+    let sum = arrASCII.reduce((acc, cur) => acc + cur, 0)
+    return sum;
+  }
+
+  function numberToPower(number, power){
+    let res = 1;
+    while (power > 0) {
+      power = power - 1;
+      res = res * number;
+    }
+    return res;
+  }
+
+  function leo(oscar){
+    switch (true) {
+      case oscar === 88:
+        return "Leo finally won the oscar! Leo is happy";
+      case oscar === 86:
+        return "Not even for Wolf of wallstreet?!"
+      case oscar > 88:
+        return "Leo got one already!"
+      default:
+        return "When will you give Leo an Oscar?"
+    }
+  }
+
+</script>
