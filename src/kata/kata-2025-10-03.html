@@ -1,0 +1,26 @@
+<script>
+
+  function integrate(coefficient, exponent) {
+    let newExponent = exponent + 1;
+    let newCoefficient = coefficient / newExponent;
+    return `${newCoefficient}x^${newExponent}`;
+  }
+
+  function isDigit(s) {
+    let sTrimmed = s.trim();
+    return /^[-+]?(\d+\.?\d*|\.\d+)$/.test(sTrimmed);
+  }
+
+  function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    this.name = this.firstName + ' ' + this.lastName
+  }
+
+  const a = ' '
+
+  function joinStrings(string1, string2){
+    return `${string1} ${string2}`;
+  }
+
+</script>
