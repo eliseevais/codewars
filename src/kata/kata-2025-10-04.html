@@ -1,0 +1,20 @@
+<script>
+
+  function quote(fighter) {
+    return fighter.toLowerCase() === "George Saint Pierre".toLowerCase()
+      ? "I am not impressed by your performance."
+      : "I'd like to take this chance to apologize.. To absolutely NOBODY!"
+  }
+
+  function typeOfSum(a, b) {
+    return typeof (a + b)
+  }
+
+  function validateHello(greetings) {
+    let greeting = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc' ];
+    let greetLowerCase = greetings.toLowerCase();
+    return greeting.some(el => greetLowerCase.includes(el));
+  }
+
+
+</script>
