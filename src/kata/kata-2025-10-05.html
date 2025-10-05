@@ -1,0 +1,41 @@
+<script>
+
+  function evil(n) {
+    let nStr = n.toString(2)
+    let nArr = nStr.split("");
+    let res = 0;
+    for (let i = 0; i < nArr.length; i++) {
+      if (+nArr[i] === 1) {
+        res = res + 1;
+      }
+    }
+    return res % 2 === 0 ? "It's Evil!" : "It's Odious!";
+  }
+
+  class Human {
+    constructor(name) {
+      this.name = name;
+    }
+  }
+
+  class Man extends Human {
+    constructor(name = "Adam") {
+      super(name);
+    }
+  }
+
+  class Woman extends Human {
+    constructor(name = "Eve") {
+      super(name);
+    }
+  }
+  class God {
+    /**
+     * @returns Human[]
+     */
+    static create(){
+      return [new Man(), new Woman()];
+    }
+  }
+
+</script>
