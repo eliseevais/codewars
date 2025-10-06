@@ -1,0 +1,41 @@
+<script>
+
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+    get info() {
+      return `${this.name}s age is ${this.age}`;
+    }
+  }
+
+  function giveMeFive(obj){
+    let res = [];
+    for (let key in obj) {
+      if (key.length === 5) {
+        res.push(key);
+      }
+      if (obj[key].length === 5) {
+        res.push(obj[key]);
+      }
+    }
+    return res;
+  }
+
+  function closeCompare(a, b, margin = 0){
+    if (margin >= Math.abs(a - b)) {
+      return 0;
+    } else if (a < b) {
+      return - 1;
+    }
+    return 1;
+  }
+
+  function splitAndMerge(string, separator) {
+   let arr = string.split(" ");
+   let newArr = arr.map(word => word.split("").join(separator));
+   return newArr.join(" ");
+  }
+
+</script>
