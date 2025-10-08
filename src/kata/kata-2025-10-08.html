@@ -1,0 +1,40 @@
+<script>
+
+  function pointsPer48(ppg, mpg) {
+    if (ppg === 0 || mpg === 0) {
+      return 0
+    }
+    let res = 48 * ppg / mpg
+    return +res.toFixed(1)
+  }
+
+  function grabDoll(dolls){
+    let bag=[];
+    for (let i = 0; i <= dolls.length; i++){
+      if (dolls[i] === "Hello Kitty" ||  dolls[i] === "Barbie doll"){
+        if (bag.length < 3){
+          bag.push(dolls[i])
+        } else {
+          break
+        }
+      } else {
+        continue
+      }
+    }
+    return bag;
+  }
+
+  function toFreud(string) {
+    if (string.length === 0){
+      return ""
+    }
+    let arr = string.split(" ")
+    let newArr = arr.map(el => el = "sex")
+    return newArr.join(" ");
+  }
+
+  function orderOperations () {
+    return (2 + 2) * (2 + 2) * 2
+  }
+
+</script>
