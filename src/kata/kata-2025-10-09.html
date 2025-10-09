@@ -1,0 +1,61 @@
+<script>
+
+  function excludingVatPrice(price) {
+    if (price === null) {
+      return -1
+    }
+    let res = price * 100 / 115
+    return Number(res.toFixed(2));
+  }
+
+  function twoHighest(arr) {
+    if (arr.length === 0) {
+      return [0]
+    } else if (arr.length === 1) {
+      let maxValue = Math.max.apply(null, arr);
+      return [maxValue]
+    } else if (arr.length > 1) {
+      let maxValue = Math.max.apply(null, arr);
+      let newArr = arr.filter(el => el !== maxValue)
+      let maxValue2 = Math.max.apply(null, newArr);
+      if (maxValue2) {
+        return [maxValue, maxValue2]
+      } else {
+        return [maxValue]
+      }
+    }
+  }
+
+  var rooms = {
+    room1: {
+      name: 1,
+      description: "",
+      completed: true
+    },
+    room2: {
+      name: 1,
+      description: "",
+      completed: true
+    },
+    room3: {
+      name: 1,
+      description: "",
+      completed: true
+    },
+  }
+
+  function datingRange(age) {
+    let min;
+    let max;
+    if (age > 14) {
+      min = age / 2 + 7
+      max = 2 * (age - 7)
+    } else {
+      min = age - 0.10 * age
+      max = age + 0.10 * age
+    }
+    return `${Math.floor(min)}-${Math.floor(max)}`
+  }
+
+
+</script>
