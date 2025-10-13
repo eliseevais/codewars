@@ -1,0 +1,60 @@
+<script>
+
+  function htmlspecialchars(formData) {
+    let regexp = new RegExp(/[<>"&]/g)
+    let result = formData.replace(regexp, function (match) {
+      let replacements = {
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "&": "&amp;"
+      }
+      return replacements[match]
+    });
+    return result
+  }
+
+  var health = 100
+  var position = 0
+  var coins = 0
+
+  function main () {
+    rollDice()
+    move(position)
+    combat()
+    getCoins(coins)
+    buyHealth(health)
+    printStatus()
+  }
+
+  function flickSwitch(arr){
+    let result = [];
+    let flag = true
+    for (let i = 0; i < arr.length; i++) {
+      if (flag === true && arr[i] !== "flick") {
+        result.push(flag);
+      } else if (flag === true && arr[i] === "flick") {
+        flag = false
+        result.push(flag);
+      } else if (flag === false && arr[i] !== "flick") {
+        result.push(flag);
+      } else if (flag === false && arr[i] === "flick") {
+        flag = true
+        result.push(flag);
+      }
+    }
+    return result
+  }
+
+  function SafeInteger(n) {
+    return Number.isSafeInteger(n) ? true : false;
+  }
+
+  function anyArrows(arrows){
+    if (arrows.length === 0) {
+      return false;
+    }
+    return arrows.some(el => el.damaged === false || el.damaged === undefined);
+  }
+
+</script>
