@@ -1,0 +1,48 @@
+<script>
+
+  function descendingOrder(n){
+    let arr = n.toString().split('');
+    let arrSorted = arr.sort((a, b) => b - a )
+    return +arrSorted.join('');
+  }
+
+  function isIsogram(str){
+    let strLower = str.toLowerCase();
+    let arr = strLower.split('');
+    let countItems = {};
+    for (let item of arr) {
+      countItems[item] = countItems[item] ? countItems[item] + 1 : 1;
+    }
+    let result = Object.values(countItems);
+    let resFinal = result.filter((el) => el > 1);
+    if (resFinal.length > 0) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  function filter_list(l) {
+    return l.filter((el) => typeof el === 'number');
+  }
+
+  function XO(str) {
+    let resX = 0;
+    let resO = 0;
+    let strLower = str.toLowerCase();
+    let arr = strLower.split("");
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === "x") {
+        resX = resX + 1;
+      } else if (arr[i] === "o") {
+        resO = resO + 1;
+      } else continue;
+    }
+    if (resX === resO) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+</script>
