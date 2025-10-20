@@ -1,0 +1,38 @@
+<script>
+
+  var isSquare = function(n){
+    if (n < 0) {
+      return false;
+    }
+    return Math.sqrt(n) * 10 % 10 === 0;
+  }
+
+  Object.defineProperty(
+    String.prototype,
+    'toJadenCase',
+    { value :
+        function toJadenCase() {
+          let arr = this.toString().split(' ');
+          for (let i = 0; i < arr.length; i++) {
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+          }
+          let result = arr.join(' ');
+          return result;
+        }
+    }
+  );
+
+  function findShort(s){
+    let arr = s.split(' ');
+    let newArr = arr.map(el => el.length);
+    let arrSorted = newArr.sort((a, b) => a - b);
+    return arrSorted[0];
+  }
+
+  function sumTwoSmallestNumbers(numbers) {
+    let arrSorted = numbers.sort((a, b) => a - b);
+    let result = arrSorted[0] + arrSorted[1];
+    return result;
+  }
+
+</script>
