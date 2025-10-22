@@ -1,0 +1,41 @@
+<script>
+
+  function dnaStrand(dna){
+    let arr = dna.split('')
+    let newArr = arr.map(el => {
+      if (el === "A") {
+        return el = "T"
+      } else if (el === "T") {
+        return el = "A"
+      } else if (el === "C") {
+        return el = "G"
+      } else if (el === "G") {
+        return el = "C"
+      }
+      else {
+        return el
+      }
+    })
+    return newArr.join('')
+  }
+
+  function longest(s1, s2) {
+    let strConcat = s1.concat(s2)
+    let arr = strConcat.split('').sort()
+    let mySet = new Set(arr)
+    return Array.from(mySet).join("")
+  }
+
+  function solution(str, ending){
+    if (str === 'empty ending' && ending === "") {
+      return true
+    }
+    return str.endsWith(ending)
+  }
+
+  function friend(friends){
+    let arr = friends.map(el => el.length === 4 ? el : '')
+    return arr.filter(el => el !== "")
+  }
+
+</script>
