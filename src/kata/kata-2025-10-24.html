@@ -1,0 +1,32 @@
+<script>
+
+  const binaryArrayToNumber = arr => {
+    let str = arr.join('');
+    return parseInt(str, 2);
+  };
+
+  function inAscOrder(arr) {
+    let res = 0;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] <= arr[i + 1]) {
+        continue
+      } else {
+        res = res + 1;
+      }
+    }
+    return res <= 0;
+  }
+
+  function reverseWords(str) {
+    let arr = str.split(" ");
+    let arrReversed = arr.map(el => el.split("").reverse().join(""));
+    return arrReversed.join(" ");
+  }
+
+  function removeDuplicateWords (s) {
+    let arr = s.split(" ");
+    let set = new Set(arr);
+    return Array.from(set).join(" ");
+  }
+
+</script>
