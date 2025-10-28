@@ -1,0 +1,49 @@
+<script>
+
+  function solution(digits){
+    let greatestNum = 0
+    for (let i = 0; i <= digits.length - 5; i++){
+      let nextNumber  = digits.substring(i, i + 5);
+      if (greatestNum < nextNumber ) {
+        greatestNum = nextNumber
+      }
+    }
+    return +greatestNum
+  }
+
+  function fizzbuzz(n) {
+    let result = [];
+    for (let i = 1; i <= n; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        result.push("FizzBuzz");
+      } else if (i % 3 === 0) {
+        result.push("Fizz");
+      } else if (i % 5 === 0) {
+        result.push("Buzz");
+      } else {
+        result.push(i);
+      }
+    }
+    return result;
+  }
+
+  var isAnagram = function(test, original) {
+    let testSorted = test.toLowerCase().split("").sort().join("");
+    let originalSorted = original.toLowerCase().split("").sort().join("");
+    return testSorted.toString() === originalSorted.toString();
+  };
+
+  function printerError(s) {
+    let colorsCount = s.length;
+    let colors = "abcdefghijklm";
+    let result = 0;
+    for (let i = 0; i < s.length; i++) {
+      if (!colors.includes(s[i])) {
+        result = result + 1;
+      }
+    }
+    return `${result}/${colorsCount}`;
+  }
+
+
+</script>
