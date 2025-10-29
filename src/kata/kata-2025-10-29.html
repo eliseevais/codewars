@@ -1,0 +1,27 @@
+<script>
+
+  function isPowerOfTwo(n) {
+    return Math.log2(n) % 1 === 0
+  }
+
+  function reverseNumber(n) {
+    if (n > 0) {
+      return +n.toString().split("").reverse().join("");
+    } else {
+      let arrReversed = n.toString().split("").reverse()
+      let arrFiltered = arrReversed.filter((el) => el !== "-");
+      let str = arrFiltered.join("")
+      return -str;
+    }
+  }
+
+  var number = function (array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+      result.push(`${i + 1}: ${array[i]}`);
+    }
+    return result;
+  }
+
+
+</script>
