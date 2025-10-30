@@ -1,0 +1,44 @@
+<script>
+
+  function oddOrEven(array) {
+    let sum = array.reduce((acc, current) => +acc + +current, 0)
+    return sum % 2 === 0 ? "even" : "odd"
+  }
+
+  function removeSmallest(numbers) {
+    if (numbers.length === 0) {
+      return [];
+    }
+    let minIndex = 0;
+    for (let i = 1; i < numbers.length; i++) {
+      if (numbers[i] < numbers[minIndex]) {
+        minIndex = i;
+      }
+    }
+    return numbers.filter((num, index) => index !== minIndex);
+  }
+
+  var capitals = function (word) {
+    let arr = word.split("");
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === arr[i].toUpperCase()) {
+        result.push(i);
+      }
+    }
+    return result;
+  };
+
+  function openOrSenior(data){
+    let result = [];
+    for (let i = 0; i < data.length; i++) {
+      if (data[i][0] >= 55 && data[i][1] > 7 && data[i][1] <= 26) {
+        result.push("Senior");
+      } else {
+        result.push("Open");
+      }
+    }
+    return result;
+  }
+
+</script>
