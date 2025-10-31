@@ -1,0 +1,25 @@
+<script>
+
+  function hasUniqueChars(str){
+    let mySet = new Set(str);
+    return mySet.size === str.length;
+  }
+
+  function sortByLength (array) {
+    return array.sort((a, b) => a.length - b.length);
+  }
+
+  var greet = function(name) {
+    let nameLower = name.toLowerCase();
+    let firstLetter = nameLower[0].toUpperCase();
+    let nameExceptFirstLetter = nameLower.substring(1, nameLower.length);
+    let res = firstLetter + nameExceptFirstLetter;
+    return `Hello ${res}!`;
+  };
+
+  function repeats(arr){
+   let resultArr = arr.filter((el) => arr.indexOf(el) === arr.lastIndexOf(el));
+   return resultArr.reduce((acc, current) => acc + current, 0);
+  }
+
+</script>
